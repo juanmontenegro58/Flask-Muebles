@@ -3,13 +3,13 @@ window.addEventListener('load',() => {
 })
 
 const fetchData = async () => {
-    const access_token = "IGQVJXaDdlODF1cUJXVF9nakJ0cGx3aDB3WVV5OTJOLVZAMUmlpcnRBcW1NZA0YtM1FyLVN1NzZAHd21fSGJqSzhkUnAwcVpSd1d4ZA3dqYUI2LVpjQ2pYZAThHSHprWlFoUVRwMWZABNEVR";
+    const access_token = 'IGQVJXaDdlODF1cUJXVF9nakJ0cGx3aDB3WVV5OTJOLVZAMUmlpcnRBcW1NZA0YtM1FyLVN1NzZAHd21fSGJqSzhkUnAwcVpSd1d4ZA3dqYUI2LVpjQ2pYZAThHSHprWlFoUVRwMWZABNEVR';
     const fields = 'id,caption,media_type,media_url,permalink'
     const url = `https://graph.instagram.com/me/media?access_token=${access_token}&fields=${fields}`
 
     const response = await fetch(url)
     const data = await response.jason()
-    let content = '<div class"portafolio">'
+    let content = '<div class"contenedor_ig">'
     for(let item of data.data) {
         const mediaType = item.media_type
         if(mediaType === 'IMAGE'){
