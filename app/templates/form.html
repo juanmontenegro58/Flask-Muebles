@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% block header %}
+<header>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_form.css')}}">
+    {% block navbar %}
+        {% include 'navbar.html' %}
+    {% endblock %}
+    {% block content %}{% endblock %}
+    {% block sobra%}
+        <div class="wave" style="height: 150px; overflow: hidden">
+            <svg
+            viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+            <path
+                d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #fff"
+            ></path>
+            </svg>
+        </div>
+{% endblock %}
+</header>
+<body>
+    
+    <div class="content">
+
+        <h1 class="logo">Contactenos</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Datos</h3>
+                <form action="/form" method="POST">
+                    <p>
+                        {{ form.nombre.label }}<!-- <label>Nombre</label> -->
+                        <input type="text" name="nombre">
+                    </p>
+                    <p>
+                        <label>Correo</label>
+                        <input type="email" name="correo">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="telefono">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="asunto">
+                    </p>
+                    <p class="block">
+                        <label>Mensaje</label>
+                        <textarea name="mensaje" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        {{ form.hidden_tag () }}
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Mas Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Direccion </li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> rattan_rattan@gmail.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>Company.com</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+{% endblock %}
+{% endblock %}

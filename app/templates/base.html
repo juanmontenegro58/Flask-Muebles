@@ -1,0 +1,111 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <title>
+        {% block title %} Rattan {% endblock %}
+    </title>
+    <link rel="shortcut icon" href="static/images/logo_rattan.png" type="images/x-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <a href="https://web.whatsapp.com/send?phone=3016262677&text=%C2%A1Hola!%20Estoy%20interesado%20en%20un%20producto." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+{% endblock %}
+
+{% block body %}
+    {% block header %}
+    <header>
+        {% block navbar %}
+            {% include 'navbar.html' %}
+        {% endblock %}
+        {% block content %}{% endblock %}
+        {% block sobra%}{% endblock %}
+    </header>
+    {% endblock %}
+    <main>
+    {% block contenedor %}{% endblock %}
+    {% block portafolio%}{% endblock %}
+        <section class="clientes contenedor">
+            <h2 class="titulo">Quienes Somos</h2>
+            <div class="cards">
+            <div class="card">
+                <img src="img/sebastian1.jpeg" alt="" />
+                <div class="contenido-texto-card">
+                <h4>SILLAS</h4>
+                <p>
+                    Lorem
+                </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/victor1.jpeg" alt="" />
+                <div class="contenido-texto-card">
+                <h4>COMEDOR</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nesciunt,
+                    nemo fuga totam sit laudantium magnam ipsa incidunt, rerum libero debitis
+                    tenetur iste cum provident reprehenderit ut deserunt dicta quisquam!
+                </p>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="about-services">
+            <div class="contenedor">
+            <h2 class="titulo">Nuestros Productos</h2>
+            <div class="servicio-cont">
+                <div class="servicio-ind">
+                <img src="img/ilustracion1.svg" alt="" />
+                <h3>Name</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                    qui?
+                </p>
+                </div>
+                <div class="servicio-ind">
+                <img src="img/ilustracion4.svg" alt="" />
+                <h3>Name</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                    qui?
+                </p>
+                </div>
+                <div class="servicio-ind">
+                <img src="img/ilustracion3.svg" alt="" />
+                <h3>Name</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+                    qui?
+                </p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+        <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+            <h4>Phone</h4>
+            <p>8296312</p>
+            </div>
+            <div class="content-foo">
+            <h4>Email</h4>
+            <p>8296312</p>
+            </div>
+            <div class="content-foo">
+            <h4>Location</h4>
+            <p>8296312</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">
+            &copy; Victory Design | Sebastian Montoya | Victor Martinez
+        </h2>
+        </footer>
+{% endblock %}
+
+
+

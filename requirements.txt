@@ -1,0 +1,10 @@
+flask
+flask-bootstrap
+flask-wtf
+flask-testing
+blinker
+flask-SQLAlchemy
+flask-login
+mysqlclient
+flask-marshmallow
+email-validator
