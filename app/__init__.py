@@ -16,8 +16,4 @@ def create_app():
     with app.app_context():
         db.create_all()
 
-    #intert_producto(1,'Silla roble','silla pequeña','silla comoda')
-    # delete_producto(1)
-    # producto = get_producto(2)
-    # productos = get_producto()
     return app

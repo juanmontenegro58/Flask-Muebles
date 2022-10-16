@@ -34,12 +34,11 @@
 }
 /* fin boton wwp */
 
-  .contenedor_ig {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+  .contenedor {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 11px;
   }
 
   .titulo {
@@ -136,22 +135,6 @@
     width: 48%;
   }
 
-  .contenido-textos h3 {
-    margin-bottom: 15px;
-  }
-
-  .contenido-textos h3 span {
-    background: #bca24e;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-    margin-right: 5px;
-  }
 
   .contenido-textos p {
     padding: 0px 0px 30px 15px;
@@ -165,7 +148,7 @@
     background: #f2f2f2;
   }
 
-  .galeria-port {
+  .galeria_port {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

@@ -31,15 +31,14 @@
     <section class="contenedor sobre-nosotros">
         <h2 class="titulo">Nuestros Productos</h2>
         <div class="contenedor-sobre-nosotros">
-            <img src="img/ilustracion2.svg" alt="" class="imagen-about-us" />
+            <img src="static/images/silla.jpg" alt="" class="imagen-about-us" />
             <div class="contenido-textos">
-            <script src=""api.js></script>
-                <h3><span>1</span>Sofas</h3>
+                <h3>Sofas</h3>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto ipsa qui nam doloribus illum eaque aspernatur,
                     recusandae debitis mollitia maxime tempora repudiandae sed culpa dolorem voluptates in, deserunt odit.
                 </p>
-                <h3><span>2</span>Accesorios</h3>
+                <h3>Accesorios</h3>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat quia repellat optio fugit,
                     dolorum tempore nesciunt veniam qui excepturi, dignissimos maiores. Enim placeat culpa totam magni numquam! Quis, error.
@@ -52,9 +51,11 @@
 <!-- Feed de instagram -->
 {% block portafolio%}
 <h2 class="titulo">Instagram Feed</h2>
-<div class="contenedor_ig" id="contenedor_ig"></div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-<script scr="script.js"></script>
+<div class="portafolio">
+    <div class="contenedor">
+        <div class="galeria_port">
+    <div class="galeria_port" id="galeria_port"></div>
+<script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
 {% endblock %}
 
 
