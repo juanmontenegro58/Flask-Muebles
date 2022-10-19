@@ -11,7 +11,7 @@ const fetchData = async () => {
         if(mediaType === 'IMAGE'){
             content += `<div class="col-md-6">
                 <a href="${item.permalink}" target="_blank">
-                <img src="${item.media_url}" class="img-fluid alt="...">
+                <img src="${item.media_url}" class="dimensiones_ig" alt="...">
                 </a>
             </div>`
         }

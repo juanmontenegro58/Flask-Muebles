@@ -18,45 +18,93 @@
 {% endblock %}
 
 {% block content %}
-        <section class="textos-header">
-            <h1>Rattan&Rattan</h1>
-            <h2>
-                Fabricación y restauración de muebles en Rattan natural y sintético.
-                Muebles 100% tejidos a mano.
-            </h2>
-        </section>
+<section class="textos-header">
+    <h1>Rattan&Rattan</h1>
+    <h2>
+        Fabricación y restauración de muebles en Rattan natural y sintético.
+        Muebles 100% tejidos a mano.
+    </h2>
+</section>
 {% endblock %}
 
 {% block contenedor %}
-    <section class="contenedor sobre-nosotros">
-        <h2 class="titulo">Nuestros Productos</h2>
-        <div class="contenedor-sobre-nosotros">
-            <img src="static/images/silla.jpg" alt="" class="imagen-about-us" />
-            <div class="contenido-textos">
-                <h3>Sofas</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto ipsa qui nam doloribus illum eaque aspernatur,
-                    recusandae debitis mollitia maxime tempora repudiandae sed culpa dolorem voluptates in, deserunt odit.
-                </p>
-                <h3>Accesorios</h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus fugiat quia repellat optio fugit,
-                    dolorum tempore nesciunt veniam qui excepturi, dignissimos maiores. Enim placeat culpa totam magni numquam! Quis, error.
-                </p>
+<section class="content-nuestros-productos">
+    <h2 class="titulo">Nuestros Productos</h2>
+    <div class="card estilo-c">
+        <a href="#">
+            <div class="img-container">
+                <img src="static/images/silla.jpg" alt="" class="imagen-prodcutos" />
             </div>
-        </div>
-    </section>
+        </a>
+            <div class="info-container">
+                <h3>SILLAS</h3>
+            </div>
+        
+    </div>
+    <div class="card estilo-c">
+        <a href="#">
+            <div class="img-container">
+                <img src="static/images/Sofas.jpg" alt="" class="imagen-prodcutos" />
+            </div>
+            <div class="info-container">
+                <h3>SOFAS</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card estilo-c">
+        <a href="#">
+            <div class="img-container">
+                <img src="static/images/mesa.jpg" alt="" class="imagen-prodcutos" />
+            </div>
+            <div class="info-container">
+                <h3>MESAS</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card estilo-c">
+        <a href="#">
+            <div class="img-container">
+                <img src="static/images/comedor.jpg" alt="" class="imagen-prodcutos" />
+            </div>
+            <div class="info-container">
+                <h3>COMEDOR</h3>
+            </div>
+        </a>
+    </div>
+</section>
 {% endblock %}
 
 <!-- Feed de instagram -->
 {% block portafolio%}
-<h2 class="titulo">Instagram Feed</h2>
+<h2 class="titulo">Instagram</h2>
 <div class="portafolio">
-    <div class="contenedor">
-        <div class="galeria_port">
+    <div class="contenedor"></div>
     <div class="galeria_port" id="galeria_port"></div>
+    <div class="hover_ig"></div>
+    <div class="imagen-port"></div>
 <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
 {% endblock %}
 
+{% block footer%}
+    <footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+        <h4>Phone</h4>
+        <p>8296312</p>
+        </div>
+        <div class="content-foo">
+        <h4>Email</h4>
+        <p>8296312</p>
+        </div>
+        <div class="content-foo">
+        <h4>Location</h4>
+        <p>8296312</p>
+        </div>
+    </div>
+    <h2 class="titulo-final">
+        Todos los derechos reservados | &copy; <b>Rattan&Rattan</b> | Desarrollado por ITSafe
+    </h2>
+    </footer>
+{% endblock %}
 
 
