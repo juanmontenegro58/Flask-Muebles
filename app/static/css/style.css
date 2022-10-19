@@ -118,40 +118,55 @@
   }
 
   /* Nuestros productos */
-.estilo-c{
-  font-family: sans-serif;
-  width: 30%;
-}
-.estilo-c .img-container{
-  overflow: hidden;
-  height: 250px;
-  position: relative;
-  border-radius: 15px;
-}
-.estilo-c .img-container img{
-  width: 105%;
-  position: absolute;
-  top: -60%;
-  transition: all 0.5s;
-}
-.estilo-c:hover .img-container img{
-  transform: scale(1.2);
+.content-nuestros-productos{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.estilo-c .info-container{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
-.estilo-c .info-container h3{
-  margin: 0;
-}
-.estilo-c .info-container h3{
-  padding: 5px 15px;
+.content-nuestros-productos h2{
   width: 100%;
 }
 
+.card-categoria{
+  width: 33%;
+}
+
+.estilo-a{
+  font-family: inherit;
+}
+
+.estilo-a a{
+  text-decoration: none;
+}
+
+.estilo-a h3{
+  text-align: center;
+  color: #bca24e;
+}
+
+.estilo-a a:hover{
+  text-decoration: underline;
+}
+
+.estilo-a .img-container{
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.estilo-a .img-container img{
+  width: 100%;
+  position: absolute;
+  top:-5%;
+  transition: all 0.5s;
+}
+
+.estilo-a a:hover .img-container img{
+  transform: scale(1.2)
+}
 /* Fin Nuestros productos */
 
 
