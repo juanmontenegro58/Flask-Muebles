@@ -1,5 +1,5 @@
 const fetchData = async () => {
-    const access_token = 'IGQVJWTHg3anRtOG5rMVZAfbGYzM25yeUw1YXdaby1qbDRnZAERibDlCcUhPMDVRdTAxa3FGWTZAyR01ORnBLLVZAEQ1I3aTBNaEUtWUhxY01Ed3l4bU5qRHVhd0dZAdmI3MzN3NkdZAQ0JR';
+    const access_token = '';
     const fields = 'id,caption,media_type,media_url,permalink'
     const url = `https://graph.instagram.com/me/media?access_token=${access_token}&fields=${fields}`
 
